@@ -37,11 +37,156 @@
             },
             colors: {
               clifford: "#da373d",
+              "btn-bg": "rgb(182, 140, 90)",
+              "hover-bg": "rgb(156, 115, 64)",
+              "hero-linear1": "rgb(17, 17, 17)",
+              "hero-linear2": "rgba(17, 17, 17, 0)",
             },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body class="font-custom1">
+    <!-- Header Section -->
+    <header class="container mx-auto">
+      <!-- Navigation -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <!-- Logo -->
+            <div class="flex">
+              <img src="./images/logo2.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-gray-600 font-semibold"><a>Home</a></li>
+              <li>
+                <details>
+                  <summary class="text-gray-600 font-semibold">
+                    Services
+                  </summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                    <li><a>Submenu 3</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="text-gray-600 font-semibold">Cases</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                    <li><a>Submenu 3</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="text-gray-600 font-semibold">Blog</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                    <li><a>Submenu 3</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="text-gray-600 font-semibold">
+                    Contact us
+                  </summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                    <li><a>Submenu 3</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-btn-bg text-white rounded-md text-lg hover:bg-hover-bg hover:scale-105 duration-500"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div
+        class="hero h-[500px] mt-4"
+        style="background-image: url(./images/banner.png)"
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold font-custom2 text-white">
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="mb-5">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div class="flex gap-3">
+              <input
+                type="text"
+                placeholder="Search Your Services"
+                class="px-4 py-3 border-0 outline-0 rounded-md text-gray-600 w-full"
+              />
+              <button
+                class="btn bg-btn-bg hover:bg-hover-bg hover:scale-105 duration-500 text-white px-8"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
